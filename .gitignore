@@ -34,3 +34,8 @@
 *cmake-build-*
 *.idea
 **build**
+
+# IDE
+*.kdev4
+*.vscode
+

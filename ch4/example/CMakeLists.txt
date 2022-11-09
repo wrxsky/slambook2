@@ -8,3 +8,5 @@ endif()
 include_directories(${Pangolin_INCLUDE_DIRS})
 add_executable(trajectoryError trajectoryError.cpp)
 target_link_libraries(trajectoryError ${Pangolin_LIBRARIES} ${FMT_LIBRARIES})
+target_link_libraries(trajectoryError ${Sophus_LIBRARIES} fmt)
+
