@@ -1,11 +1,11 @@
 ## About this fork
 
-Tested on 05.12.2022
-Ubuntu 20.04
-OpenCV 4.6.0
-Eigen 3.3.7
-cmake 3.16.3
-ceres 1.14.0
+- Tested on 05.12.2022  
+- Ubuntu 20.04  
+- OpenCV 4.6.0  
+- Eigen 3.3.7  
+- cmake 3.16.3  
+- ceres 1.14.0  
 
 ## Slambook2
 ![titlepage](./figures/title.png)
