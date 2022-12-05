@@ -6,7 +6,7 @@ add_definitions("-DENABLE_SSE")
 set(CMAKE_CXX_FLAGS "-std=c++11 -O2 ${SSE_FLAGS} -msse4")
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 
-find_package(OpenCV 3 REQUIRED)
+find_package(OpenCV 4 REQUIRED)
 find_package(G2O REQUIRED)
 find_package(Sophus REQUIRED)
 
@@ -34,9 +34,11 @@ target_link_libraries(triangulation ${OpenCV_LIBS})
 add_executable(pose_estimation_3d2d pose_estimation_3d2d.cpp)
 target_link_libraries(pose_estimation_3d2d
         g2o_core g2o_stuff
-        ${OpenCV_LIBS})
+        ${OpenCV_LIBS}
+        fmt)
 
 add_executable(pose_estimation_3d3d pose_estimation_3d3d.cpp)
 target_link_libraries(pose_estimation_3d3d
         g2o_core g2o_stuff
-        ${OpenCV_LIBS})
+        ${OpenCV_LIBS}
+        fmt)
